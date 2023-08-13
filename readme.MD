@@ -47,7 +47,6 @@ Install all dependencies using the provided requirements.txt file:
 Rename the .env.example to .env and fill in the required fields:
 
 ```bash
-    Copy code
     SENDGRID_API_KEY=your_sendgrid_api_key
     SENDER_EMAIL=your_email@example.com
     RECEIVER_EMAIL=receiver_email@example.com
