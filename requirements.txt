@@ -7,7 +7,7 @@ face-recognition-models==0.3.0
 idna==3.2
 importlib-metadata==4.6.1
 imutils==0.5.4
-numpy==1.21.0
+numpy==1.21.0 #check newest version
 opencv-python==4.5.3.56
 Pillow==8.3.1
 PyJWT==1.7.1
@@ -21,3 +21,6 @@ starkbank-ecdsa==1.1.1
 typing-extensions==3.10.0.0
 urllib3==1.26.6
 zipp==3.5.0
+sendgrid==6.10.0
+
+
