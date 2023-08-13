@@ -31,8 +31,10 @@ Using pip:
     Install the necessary libraries:
 
     ```bash
-    pip3 install imutils face_recognition sendgrid
+        pip3 install imutils face_recognition sendgrid
     ```
+
+    
     - Using requirements.txt:
 
     Install all dependencies using the provided requirements.txt file:
@@ -44,16 +46,16 @@ Using pip:
 
 Rename the .env.example to .env and fill in the required fields:
 
-    ```bash
-        Copy code
-        SENDGRID_API_KEY=your_sendgrid_api_key
-        SENDER_EMAIL=your_email@example.com
-        RECEIVER_EMAIL=receiver_email@example.com
-        DB_HOST=localhost
-        DB_USER=root
-        DB_PASSWORD=your_mysql_password
-        DB_NAME=FaceRecognition
-    ```
+```bash
+    Copy code
+    SENDGRID_API_KEY=your_sendgrid_api_key
+    SENDER_EMAIL=your_email@example.com
+    RECEIVER_EMAIL=receiver_email@example.com
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASSWORD=your_mysql_password
+    DB_NAME=FaceRecognition
+```
 ***⚠️ Warning: Ensure your .env file is not shared or pushed to public repositories as it contains sensitive information.***
 
 4. Database Setup:
@@ -69,40 +71,3 @@ Set up your MySQL server, create a database named FaceRecognition, and then crea
 6. Usage
 With the program running, it will utilize the camera to detect and recognize faces in real-time. Recognized and unrecognized faces will trigger an email alert, and relevant details will be saved in the MySQL database.
 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-install imutils
-install face_recognition
-install sendgrid
-
-
-Install other packages
-
-......
