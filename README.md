@@ -26,22 +26,22 @@ A real-time face detection system using OpenCV and Haarcascades, further enhance
 
 2. **Install Dependencies**:
 
-Using pip:
+- Using pip:
 
     Install the necessary libraries:
 
-    ```bash
-        pip3 install imutils face_recognition sendgrid
-    ```
+```bash
+    pip3 install imutils face_recognition sendgrid
+```
 
     
-    - Using requirements.txt:
+- Using requirements.txt:
 
-    Install all dependencies using the provided requirements.txt file:
+Install all dependencies using the provided requirements.txt file:
 
-    ```bash
-        pip3 install -r requirements.txt
-    ``` 
+```bash
+    pip3 install -r requirements.txt
+``` 
 3. Environment Variables:
 
 Rename the .env.example to .env and fill in the required fields:
