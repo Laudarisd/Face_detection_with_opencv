@@ -1,4 +1,4 @@
-# Face Detection with OpenCV and Haarcascades
+# Face Detection with OpenCV and Haarcascades(Implementaion in Raspberry Pi)
 
 A real-time face detection system using OpenCV and Haarcascades, further enhanced with the capability to recognize known faces and alert the user via SendGrid email notifications. Detected face information, along with related data, is stored in a MySQL database.
 
