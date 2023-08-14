@@ -1,5 +1,4 @@
-# Face Detection with OpenCV and Haarcascades
-
+# Face Detection with OpenCV and Haarcascades(implementation in Raspberry Pi)
 A real-time face detection system using OpenCV and Haarcascades, further enhanced with the capability to recognize known faces and alert the user via SendGrid email notifications. Detected face information, along with related data, is stored in a MySQL database.
 
 ## Features
@@ -69,4 +68,15 @@ Set up your MySQL server, create a database named FaceRecognition, and then crea
 
 6. Usage
 With the program running, it will utilize the camera to detect and recognize faces in real-time. Recognized and unrecognized faces will trigger an email alert, and relevant details will be saved in the MySQL database.
+
+
+7. Note: Camera Module which is provided here uses a generic webcam (src=0). If we plan to use the Raspberry Pi camera module, we might need to modify the video stream initialization. Uncomment the line vs = VideoStream(usePiCamera=True).start() and comment out the line self.vs = VideoStream(src=0).start()
+
+
+***Update***
+
+- Added more error handling approached.
+- Cleanup: Removed redundant lines.
+- Code Optimization : Refactored repetitive tasks and improved readability. More advanced optimizations methods might require for robust optimizations process.
+
 
