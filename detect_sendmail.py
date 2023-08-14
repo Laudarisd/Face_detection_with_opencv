@@ -21,11 +21,17 @@ class DetectAndSendMail():
         self.currentname = "unknown"
         self.encodingsP = "./src/model/model.pickle"
         self.cascade = "./src/xml/haarcascade_frontalface_default.xml"
-        print("[INFO] loading encodings + face detector...")
-        self.data = pickle.loads(open(self.encodingsP, "rb").read())
-        self.detector = cv2.CascadeClassifier(self.cascade)
-        print("[INFO] starting video stream...")
-
+        try:
+            print("[INFO] loading encodings + face detector...")
+            self.data = pickle.loads(open(self.encodingsP, "rb").read())
+            self.detector = cv2.CascadeClassifier(self.cascade)
+            print("[INFO] encodings and face detector loaded successfully!")
+        except Exception as e:
+            print(f"Error loading encodings or face detector: {e}")
+        # print("[INFO] loading encodings + face detector...")
+        # self.data = pickle.loads(open(self.encodingsP, "rb").read())
+        # self.detector = cv2.CascadeClassifier(self.cascade)
+        # print("[INFO] starting video stream...")
         # Additional initialization
         self.sent_emails = set()  # Set to store names for which emails have been sent
         self.unknown_count = 0  # Counter for unknown image filenames
@@ -36,8 +42,8 @@ class DetectAndSendMail():
             # vs = VideoStream(usePiCamera=True).start()
             time.sleep(2.0)
             self.fps = FPS().start()
-        except:
-            print("No camera detected")
+        except Exception as e:
+            print(f"Error initializing camera: {e}")
 
     def detect(self):
         db = Database() #create a database instances
