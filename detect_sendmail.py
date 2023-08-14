@@ -121,7 +121,7 @@ class DetectAndSendMail():
         print("[INFO] elapsed time:", self.fps.elapsed())
         print("[INFO] approx. FPS:", self.fps.fps())
         cv2.destroyAllWindows()
-        self.vs.stop()
+        #self.vs.stop()
     def send_email(self, name, image_path):
         SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
         sg = sendgrid.SendGridAPIClient(SENDGRID_API_KEY)
